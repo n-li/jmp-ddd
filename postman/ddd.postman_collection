@@ -1,0 +1,86 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ddd",
+		"_postman_id": "5e47787f-b7be-0253-1dd7-537a34148cdd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create person",
+			"request": {
+				"url": "http://localhost:8080/person",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Tom Cat\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get person",
+			"request": {
+				"url": "http://localhost:8080/person/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create account for person",
+			"request": {
+				"url": "http://localhost:8080/person/1/account/123/create",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "add money 200",
+			"request": {
+				"url": "http://localhost:8080/person/1/account/123/put/200",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "remove money 100",
+			"request": {
+				"url": "http://localhost:8080/person/1/account/123/put/-100",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get account history",
+			"request": {
+				"url": "http://localhost:8080/person/1/account/123/history",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
